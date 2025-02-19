@@ -22,11 +22,11 @@ jobs:
          password: ${{ secrets.DOCKER_PASSWORD }}
 
      # Construir y subir la imagen de la base de datos
-     - name: Build and push DB Docker image
-       run: |
-         cd mysql
-         docker build -t ${{ secrets.DOCKER_USERNAME }}/calculadoraD .
-         docker push ${{ secrets.DOCKER_USERNAME }}/calculadoraD
+   #  - name: Build and push DB Docker image
+    #   run: |
+     #    cd mysql
+      #   docker build -t ${{ secrets.DOCKER_USERNAME }}/calculadoraD .
+       #  docker push ${{ secrets.DOCKER_USERNAME }}/calculadoraD
 
      # Construir y subir la imagen de la aplicación
      - name: Build and push PHP Docker image
