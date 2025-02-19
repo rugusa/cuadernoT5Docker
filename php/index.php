@@ -1,7 +1,7 @@
 <?php
 require_once 'src/Calculadora.php';
 
-use CuadernoEjerciciosTema5\Calculadora;
+use App\Calculadora;
 
 $resultado = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
