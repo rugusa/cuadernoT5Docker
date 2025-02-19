@@ -1,13 +1,13 @@
 services:
   db:
-    image: rugusa/calculadoraD
-    container_name: contenedorCalculadoraD
+    image: rugusa/calculadorad
+    container_name: contenedorCalculadorad
     ports:
       - "3306:3306"
 
   php:
-    image: rugusa/calculadoraD
-    container_name: contenedorcalculadoraD
+    image: rugusa/calculadorad
+    container_name: contenedorcalculadorad
     ports:
       - "8080:80"
     depends_on:

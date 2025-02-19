@@ -32,8 +32,8 @@ jobs:
      - name: Build and push PHP Docker image
        run: |
         cd php
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/calculadoraD .
-        docker push ${{ secrets.DOCKER_USERNAME }}/calculadoraD
+        docker build -t ${{ secrets.DOCKER_USERNAME }}/calculadorad .
+        docker push ${{ secrets.DOCKER_USERNAME }}/calculadorad
 
      # Transferir el archivo compose.yml al servidor remoto
      - name: Transfer compose.yml to remote server
